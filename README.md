@@ -4,7 +4,7 @@ Cansado de procurar por aí e precisando entregar uma aplicação que emulasse o
 
 Te interessou? Veja [aqui](https://tdcosta100.github.io/tabela-editavel-vue/) um exemplo.
 
-Você pode também navegar pelo [código-fonte do arquivo](blob/master/src/components/Tabela.vue).
+Você pode também navegar pelo [código-fonte do arquivo](src/components/Tabela.vue).
 
 ## Interações possíveis e atalhos
 
