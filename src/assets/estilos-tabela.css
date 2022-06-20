@@ -1,0 +1,3653 @@
+/*
+ * Claro 1
+ */
+
+ .tabela.claro-1:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.claro-1:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-1:deep(.celula.cabecalho),
+.tabela.claro-1:deep(.celula.ultima-linha) {
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+}
+
+.tabela.claro-1:deep(.celula.cabecalho) {
+	height: 30px;
+	padding-top: 6px;
+}
+
+.tabela.claro-1:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.claro-1:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.tabela.claro-1:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-1:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-1:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.claro-1:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.claro-1:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.claro-1:deep(.celula input[type="text"]),
+.tabela.claro-1:deep(.celula input[type="number"]),
+.tabela.claro-1:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.claro-1:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.claro-1:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.claro-1:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.claro-1:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-1:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-1:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 2
+ */
+
+.tabela.claro-2:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #305496;
+}
+
+.tabela.claro-2:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-2:deep(.celula.cabecalho),
+.tabela.claro-2:deep(.celula.ultima-linha) {
+	border-bottom: 1px solid #4472C4;
+	padding-bottom: 5px;
+}
+
+.tabela.claro-2:deep(.celula.cabecalho) {
+	height: 30px;
+	padding-top: 6px;
+}
+
+.tabela.claro-2:deep(.celula.linha-impar) {
+	background-color: #d9e1f2;
+}
+
+.tabela.claro-2:deep(.selecao) {
+	margin: 0;
+}
+
+.tabela.claro-2:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-2:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-2:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.claro-2:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.claro-2:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.claro-2:deep(.celula input[type="text"]),
+.tabela.claro-2:deep(.celula input[type="number"]),
+.tabela.claro-2:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.claro-2:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.claro-2:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.claro-2:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.claro-2:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-2:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-2:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 3
+ */
+
+.tabela.claro-3:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #c65911;
+}
+
+.tabela.claro-3:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-3:deep(.celula.cabecalho),
+.tabela.claro-3:deep(.celula.ultima-linha) {
+	border-bottom: 1px solid #ed7d31;
+	padding-bottom: 5px;
+}
+
+.tabela.claro-3:deep(.celula.cabecalho) {
+	height: 30px;
+	padding-top: 6px;
+}
+
+.tabela.claro-3:deep(.celula.linha-impar) {
+	background-color: #fce4d6;
+}
+
+.tabela.claro-3:deep(.selecao) {
+	margin: 0;
+}
+
+.tabela.claro-3:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-3:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-3:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.claro-3:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.claro-3:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.claro-3:deep(.celula input[type="text"]),
+.tabela.claro-3:deep(.celula input[type="number"]),
+.tabela.claro-3:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.claro-3:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.claro-3:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.claro-3:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.claro-3:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-3:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-3:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 4
+ */
+
+.tabela.claro-4:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #7b7b7b;
+}
+
+.tabela.claro-4:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-4:deep(.celula.cabecalho),
+.tabela.claro-4:deep(.celula.ultima-linha) {
+	border-bottom: 1px solid #a5a5a5;
+	padding-bottom: 5px;
+}
+
+.tabela.claro-4:deep(.celula.cabecalho) {
+	height: 30px;
+	padding-top: 6px;
+}
+
+.tabela.claro-4:deep(.celula.linha-impar) {
+	background-color: #ededed;
+}
+
+.tabela.claro-4:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tabela.claro-4:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-4:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-4:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.claro-4:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.claro-4:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.claro-4:deep(.celula input[type="text"]),
+.tabela.claro-4:deep(.celula input[type="number"]),
+.tabela.claro-4:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.claro-4:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.claro-4:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.claro-4:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.claro-4:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-4:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-4:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 5
+ */
+
+.tabela.claro-5:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #bf8f00;
+}
+
+.tabela.claro-5:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-5:deep(.celula.cabecalho),
+.tabela.claro-5:deep(.celula.ultima-linha) {
+	border-bottom: 1px solid #ffc000;
+	padding-bottom: 5px;
+}
+
+.tabela.claro-5:deep(.celula.cabecalho) {
+	height: 30px;
+	padding-top: 6px;
+}
+
+.tabela.claro-5:deep(.celula.linha-impar) {
+	background-color: #fff2cc;
+}
+
+.tabela.claro-5:deep(.selecao) {
+	margin: 0;
+}
+
+.tabela.claro-5:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-5:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-5:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.claro-5:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.claro-5:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.claro-5:deep(.celula input[type="text"]),
+.tabela.claro-5:deep(.celula input[type="number"]),
+.tabela.claro-5:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.claro-5:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.claro-5:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.claro-5:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.claro-5:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-5:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-5:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 6
+ */
+
+.tabela.claro-6:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #2f75b5;
+}
+
+.tabela.claro-6:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-6:deep(.celula.cabecalho),
+.tabela.claro-6:deep(.celula.ultima-linha) {
+	border-bottom: 1px solid #5b9bd5;
+	padding-bottom: 5px;
+}
+
+.tabela.claro-6:deep(.celula.cabecalho) {
+	height: 30px;
+	padding-top: 6px;
+}
+
+.tabela.claro-6:deep(.celula.linha-impar) {
+	background-color: #ddebf7;
+}
+
+.tabela.claro-6:deep(.selecao) {
+	margin: 0;
+}
+
+.tabela.claro-6:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-6:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-6:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.claro-6:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.claro-6:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.claro-6:deep(.celula input[type="text"]),
+.tabela.claro-6:deep(.celula input[type="number"]),
+.tabela.claro-6:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.claro-6:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.claro-6:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.claro-6:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.claro-6:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-6:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-6:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 7
+ */
+
+.tabela.claro-7:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #548235;
+}
+
+.tabela.claro-7:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-7:deep(.celula.cabecalho),
+.tabela.claro-7:deep(.celula.ultima-linha) {
+	border-bottom: 1px solid #70ad47;
+	padding-bottom: 5px;
+}
+
+.tabela.claro-7:deep(.celula.cabecalho) {
+	height: 30px;
+	padding-top: 6px;
+}
+
+.tabela.claro-7:deep(.celula.linha-impar) {
+	background-color: #e2efda;
+}
+
+.tabela.claro-7:deep(.selecao) {
+	margin: 0;
+}
+
+.tabela.claro-7:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-7:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-7:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.claro-7:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.claro-7:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.claro-7:deep(.celula input[type="text"]),
+.tabela.claro-7:deep(.celula input[type="number"]),
+.tabela.claro-7:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.claro-7:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.claro-7:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.claro-7:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.claro-7:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-7:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-7:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 8
+ */
+
+.tabela.claro-8:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #000;
+}
+
+.tabela.claro-8:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #000;
+}
+
+.tabela.claro-8:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #000;
+}
+
+.tabela.claro-8:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.tabela.claro-8:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #000;
+}
+
+.tabela.claro-8:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-8:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.claro-8:deep(.selecao.inicio-primeira-coluna),
+.tabela.claro-8:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.claro-8:deep(.selecao.inicio-ultima-coluna),
+.tabela.claro-8:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.claro-8:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-8:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-8:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.claro-8:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.claro-8:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.claro-8:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.claro-8:deep(.celula input[type="text"]),
+.tabela.claro-8:deep(.celula input[type="number"]),
+.tabela.claro-8:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.claro-8:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.claro-8:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.claro-8:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.claro-8:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-8:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-8:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+/*
+ * Claro 9
+ */
+
+.tabela.claro-9:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #4472c4;
+}
+
+.tabela.claro-9:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #4472c4;
+}
+
+.tabela.claro-9:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #4472c4;
+}
+
+.tabela.claro-9:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #4472c4;
+}
+
+.tabela.claro-9:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #4472c4;
+}
+
+.tabela.claro-9:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-9:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.claro-9:deep(.selecao.inicio-primeira-coluna),
+.tabela.claro-9:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.claro-9:deep(.selecao.inicio-ultima-coluna),
+.tabela.claro-9:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.claro-9:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-9:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-9:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.claro-9:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.claro-9:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.claro-9:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.claro-9:deep(.celula input[type="text"]),
+.tabela.claro-9:deep(.celula input[type="number"]),
+.tabela.claro-9:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.claro-9:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.claro-9:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.claro-9:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.claro-9:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-9:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-9:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 10
+ */
+
+.tabela.claro-10:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #ed7d31;
+}
+
+.tabela.claro-10:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #ed7d31;
+}
+
+.tabela.claro-10:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #ed7d31;
+}
+
+.tabela.claro-10:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ed7d31;
+}
+
+.tabela.claro-10:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #ed7d31;
+}
+
+.tabela.claro-10:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-10:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.claro-10:deep(.selecao.inicio-primeira-coluna),
+.tabela.claro-10:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.claro-10:deep(.selecao.inicio-ultima-coluna),
+.tabela.claro-10:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.claro-10:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-10:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-10:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.claro-10:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.claro-10:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.claro-10:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.claro-10:deep(.celula input[type="text"]),
+.tabela.claro-10:deep(.celula input[type="number"]),
+.tabela.claro-10:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.claro-10:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.claro-10:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.claro-10:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.claro-10:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-10:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-10:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 11
+ */
+
+.tabela.claro-11:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #a5a5a5;
+}
+
+.tabela.claro-11:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #a5a5a5;
+}
+
+.tabela.claro-11:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #a5a5a5;
+}
+
+.tabela.claro-11:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #a5a5a5;
+}
+
+.tabela.claro-11:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #a5a5a5;
+}
+
+.tabela.claro-11:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-11:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.claro-11:deep(.selecao.inicio-primeira-coluna),
+.tabela.claro-11:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.claro-11:deep(.selecao.inicio-ultima-coluna),
+.tabela.claro-11:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.claro-11:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-11:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-11:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.claro-11:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.claro-11:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.claro-11:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.claro-11:deep(.celula input[type="text"]),
+.tabela.claro-11:deep(.celula input[type="number"]),
+.tabela.claro-11:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.claro-11:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.claro-11:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.claro-11:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.claro-11:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-11:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-11:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 12
+ */
+
+.tabela.claro-12:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #ffc000;
+}
+
+.tabela.claro-12:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #ffc000;
+}
+
+.tabela.claro-12:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #ffc000;
+}
+
+.tabela.claro-12:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ffc000;
+}
+
+.tabela.claro-12:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #ffc000;
+}
+
+.tabela.claro-12:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-12:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.claro-12:deep(.selecao.inicio-primeira-coluna),
+.tabela.claro-12:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.claro-12:deep(.selecao.inicio-ultima-coluna),
+.tabela.claro-12:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.claro-12:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-12:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-12:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.claro-12:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.claro-12:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.claro-12:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.claro-12:deep(.celula input[type="text"]),
+.tabela.claro-12:deep(.celula input[type="number"]),
+.tabela.claro-12:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.claro-12:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.claro-12:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.claro-12:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.claro-12:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-12:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-12:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 13
+ */
+
+.tabela.claro-13:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #5b9bd5;
+}
+
+.tabela.claro-13:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #5b9bd5;
+}
+
+.tabela.claro-13:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #5b9bd5;
+}
+
+.tabela.claro-13:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #5b9bd5;
+}
+
+.tabela.claro-13:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #5b9bd5;
+}
+
+.tabela.claro-13:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-13:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.claro-13:deep(.selecao.inicio-primeira-coluna),
+.tabela.claro-13:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.claro-13:deep(.selecao.inicio-ultima-coluna),
+.tabela.claro-13:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.claro-13:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-13:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-13:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.claro-13:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.claro-13:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.claro-13:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.claro-13:deep(.celula input[type="text"]),
+.tabela.claro-13:deep(.celula input[type="number"]),
+.tabela.claro-13:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.claro-13:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.claro-13:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.claro-13:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.claro-13:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-13:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-13:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 14
+ */
+
+.tabela.claro-14:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #70ad47;
+}
+
+.tabela.claro-14:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #70ad47;
+}
+
+.tabela.claro-14:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #70ad47;
+}
+
+.tabela.claro-14:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #70ad47;
+}
+
+.tabela.claro-14:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #70ad47;
+}
+
+.tabela.claro-14:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.claro-14:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.claro-14:deep(.selecao.inicio-primeira-coluna),
+.tabela.claro-14:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.claro-14:deep(.selecao.inicio-ultima-coluna),
+.tabela.claro-14:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.claro-14:deep(.selecao.inicio-ultima-linha),
+.tabela.claro-14:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.claro-14:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.claro-14:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.claro-14:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.claro-14:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.claro-14:deep(.celula input[type="text"]),
+.tabela.claro-14:deep(.celula input[type="number"]),
+.tabela.claro-14:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.claro-14:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.claro-14:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.claro-14:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.claro-14:deep(.celula.ultima-linha input[type="text"]),
+.tabela.claro-14:deep(.celula.ultima-linha input[type="number"]),
+.tabela.claro-14:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Claro 15
+ */
+
+.tabela.claro-15:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+}
+
+.tabela.claro-15:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.claro-15:deep(.selecao) {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+
+/*
+ * Claro 16
+ */
+
+.tabela.claro-16:deep(.celula) {
+	border-color: #4472c4;
+}
+
+.tabela.claro-16:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+}
+
+.tabela.claro-16:deep(.celula.linha-impar) {
+	background-color: #d9e1f2;
+}
+
+
+
+/*
+ * Claro 17
+ */
+
+.tabela.claro-17:deep(.celula) {
+	border-color: #ed7d31;
+}
+
+.tabela.claro-17:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+}
+
+.tabela.claro-17:deep(.celula.linha-impar) {
+	background-color: #fce4d6;
+}
+
+
+
+/*
+ * Claro 18
+ */
+
+.tabela.claro-18:deep(.celula) {
+	border-color: #a5a5a5;
+}
+
+.tabela.claro-18:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+}
+
+.tabela.claro-18:deep(.celula.linha-impar) {
+	background-color: #ededed;
+}
+
+.tabela.claro-18:deep(.selecao) {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*
+ * Claro 19
+ */
+
+.tabela.claro-19:deep(.celula) {
+	border-color: #ffc000;
+}
+
+.tabela.claro-19:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+}
+
+.tabela.claro-19:deep(.celula.linha-impar) {
+	background-color: #fff2cc;
+}
+
+
+
+/*
+ * Claro 20
+ */
+
+.tabela.claro-20:deep(.celula) {
+	border-color: #5b9bd5;
+}
+
+.tabela.claro-20:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+}
+
+.tabela.claro-20:deep(.celula.linha-impar) {
+	background-color: #ddebf7;
+}
+
+
+
+/*
+ * Claro 21
+ */
+
+.tabela.claro-21:deep(.celula) {
+	border-color: #70ad47;
+}
+
+.tabela.claro-21:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+}
+
+.tabela.claro-21:deep(.celula.linha-impar) {
+	background-color: #e2efda;
+}
+
+
+
+/*
+ * Médio 1
+ */
+
+.tabela.medio-1:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #000;
+}
+
+.tabela.medio-1:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #000;
+}
+
+.tabela.medio-1:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #000;
+}
+
+.tabela.medio-1:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.tabela.medio-1:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #000;
+}
+
+.tabela.medio-1:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-1:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-1:deep(.selecao) {
+	margin: 1px 0 0 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.tabela.medio-1:deep(.selecao.inicio-primeira-coluna),
+.tabela.medio-1:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.medio-1:deep(.selecao.inicio-ultima-coluna),
+.tabela.medio-1:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.medio-1:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-1:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-1:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.medio-1:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.medio-1:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.medio-1:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.medio-1:deep(.celula input[type="text"]),
+.tabela.medio-1:deep(.celula input[type="number"]),
+.tabela.medio-1:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.medio-1:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.medio-1:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.medio-1:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.medio-1:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-1:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-1:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Médio 2
+ */
+
+.tabela.medio-2:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #8ea9db;
+}
+
+.tabela.medio-2:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #8ea9db;
+}
+
+.tabela.medio-2:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #8ea9db;
+}
+
+.tabela.medio-2:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #8ea9db;
+}
+
+.tabela.medio-2:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #4472c4;
+}
+
+.tabela.medio-2:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-2:deep(.celula.linha-impar) {
+	background-color: #d9e1f2;
+}
+
+.tabela.medio-2:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.medio-2:deep(.selecao.inicio-primeira-coluna),
+.tabela.medio-2:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.medio-2:deep(.selecao.inicio-ultima-coluna),
+.tabela.medio-2:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.medio-2:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-2:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-2:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.medio-2:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.medio-2:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.medio-2:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.medio-2:deep(.celula input[type="text"]),
+.tabela.medio-2:deep(.celula input[type="number"]),
+.tabela.medio-2:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.medio-2:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.medio-2:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.medio-2:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.medio-2:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-2:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-2:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Médio 3
+ */
+
+.tabela.medio-3:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #f4b084;
+}
+
+.tabela.medio-3:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #f4b084;
+}
+
+.tabela.medio-3:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #f4b084;
+}
+
+.tabela.medio-3:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #f4b084;
+}
+
+.tabela.medio-3:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #ed7d31;
+}
+
+.tabela.medio-3:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-3:deep(.celula.linha-impar) {
+	background-color: #fce4d6;
+}
+
+.tabela.medio-3:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.medio-3:deep(.selecao.inicio-primeira-coluna),
+.tabela.medio-3:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.medio-3:deep(.selecao.inicio-ultima-coluna),
+.tabela.medio-3:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.medio-3:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-3:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-3:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.medio-3:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.medio-3:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.medio-3:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.medio-3:deep(.celula input[type="text"]),
+.tabela.medio-3:deep(.celula input[type="number"]),
+.tabela.medio-3:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.medio-3:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.medio-3:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.medio-3:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.medio-3:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-3:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-3:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Médio 4
+ */
+
+.tabela.medio-4:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #c9c9c9;
+}
+
+.tabela.medio-4:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #c9c9c9;
+}
+
+.tabela.medio-4:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #c9c9c9;
+}
+
+.tabela.medio-4:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.tabela.medio-4:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #a5a5a5;
+}
+
+.tabela.medio-4:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-4:deep(.celula.linha-impar) {
+	background-color: #ededed;
+}
+
+.tabela.medio-4:deep(.selecao) {
+	margin: 1px 0 0 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tabela.medio-4:deep(.selecao.inicio-primeira-coluna),
+.tabela.medio-4:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.medio-4:deep(.selecao.inicio-ultima-coluna),
+.tabela.medio-4:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.medio-4:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-4:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-4:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.medio-4:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.medio-4:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.medio-4:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.medio-4:deep(.celula input[type="text"]),
+.tabela.medio-4:deep(.celula input[type="number"]),
+.tabela.medio-4:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.medio-4:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.medio-4:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.medio-4:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.medio-4:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-4:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-4:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Médio 5
+ */
+
+.tabela.medio-5:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #ffd966;
+}
+
+.tabela.medio-5:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #ffd966;
+}
+
+.tabela.medio-5:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #ffd966;
+}
+
+.tabela.medio-5:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ffd966;
+}
+
+.tabela.medio-5:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #ffc000;
+}
+
+.tabela.medio-5:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-5:deep(.celula.linha-impar) {
+	background-color: #fff2cc;
+}
+
+.tabela.medio-5:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.medio-5:deep(.selecao.inicio-primeira-coluna),
+.tabela.medio-5:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.medio-5:deep(.selecao.inicio-ultima-coluna),
+.tabela.medio-5:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.medio-5:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-5:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-5:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.medio-5:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.medio-5:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.medio-5:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.medio-5:deep(.celula input[type="text"]),
+.tabela.medio-5:deep(.celula input[type="number"]),
+.tabela.medio-5:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.medio-5:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.medio-5:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.medio-5:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.medio-5:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-5:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-5:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Médio 6
+ */
+
+.tabela.medio-6:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #9bc2e6;
+}
+
+.tabela.medio-6:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #9bc2e6;
+}
+
+.tabela.medio-6:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #9bc2e6;
+}
+
+.tabela.medio-6:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #9bc2e6;
+}
+
+.tabela.medio-6:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #5b9bd5;
+}
+
+.tabela.medio-6:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-6:deep(.celula.linha-impar) {
+	background-color: #ddebf7;
+}
+
+.tabela.medio-6:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.medio-6:deep(.selecao.inicio-primeira-coluna),
+.tabela.medio-6:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.medio-6:deep(.selecao.inicio-ultima-coluna),
+.tabela.medio-6:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.medio-6:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-6:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-6:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.medio-6:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.medio-6:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.medio-6:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.medio-6:deep(.celula input[type="text"]),
+.tabela.medio-6:deep(.celula input[type="number"]),
+.tabela.medio-6:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.medio-6:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.medio-6:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.medio-6:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.medio-6:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-6:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-6:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Médio 7
+ */
+
+.tabela.medio-7:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 5px 6px;
+	border: none;
+	border-top: 1px solid #a9d08e;
+}
+
+.tabela.medio-7:deep(.celula.primeira-coluna) {
+	padding-left: 5px;
+	border-left: 1px solid #a9d08e;
+}
+
+.tabela.medio-7:deep(.celula.ultima-coluna) {
+	border-right: 1px solid #a9d08e;
+}
+
+.tabela.medio-7:deep(.celula.ultima-linha) {
+	height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #a9d08e;
+}
+
+.tabela.medio-7:deep(.celula.cabecalho) {
+	margin-bottom: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #70ad47;
+}
+
+.tabela.medio-7:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-7:deep(.celula.linha-impar) {
+	background-color: #e2efda;
+}
+
+.tabela.medio-7:deep(.selecao) {
+	margin: 1px 0 0 0;
+}
+
+.tabela.medio-7:deep(.selecao.inicio-primeira-coluna),
+.tabela.medio-7:deep(.selecao.fim-primeira-coluna) {
+	margin-left: 1px;
+}
+
+.tabela.medio-7:deep(.selecao.inicio-ultima-coluna),
+.tabela.medio-7:deep(.selecao.fim-ultima-coluna) {
+	margin-right: 1px;
+}
+
+.tabela.medio-7:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-7:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-7:deep(.area-transferencia) {
+	margin: 0 0 -1px 0;
+}
+
+.tabela.medio-7:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 0;
+}
+
+.tabela.medio-7:deep(.celula-atual) {
+	margin: -1px -1px -2px -1px;
+}
+
+.tabela.medio-7:deep(.celula-atual.ultima-linha) {
+	margin-bottom: -1px;
+}
+
+.tabela.medio-7:deep(.celula input[type="text"]),
+.tabela.medio-7:deep(.celula input[type="number"]),
+.tabela.medio-7:deep(.celula input[type="email"]) {
+	padding: 5px 5px 5px 6px;
+}
+
+.tabela.medio-7:deep(.celula.primeira-coluna input[type="text"]),
+.tabela.medio-7:deep(.celula.primeira-coluna input[type="number"]),
+.tabela.medio-7:deep(.celula.primeira-coluna input[type="email"]) {
+	padding-left: 5px;
+}
+
+.tabela.medio-7:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-7:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-7:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 5px;
+}
+
+
+
+/*
+ * Médio 8
+ */
+
+.tabela.medio-8:deep(.celula) {
+	border-color: #fff;
+}
+
+.tabela.medio-8:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+	color: #fff;
+	background-color: #000;
+}
+
+.tabela.medio-8:deep(.celula.linha-impar) {
+	background-color: #a6a6a6;
+}
+
+.tabela.medio-8:deep(.celula.linha-par) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-8:deep(.selecao) {
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+
+/*
+ * Médio 9
+ */
+
+.tabela.medio-9:deep(.celula) {
+	border-color: #fff;
+}
+
+.tabela.medio-9:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+	color: #fff;
+	background-color: #4472c4;
+}
+
+.tabela.medio-9:deep(.celula.linha-impar) {
+	background-color: #b4c6e7;
+}
+
+.tabela.medio-9:deep(.celula.linha-par) {
+	background-color: #d9e1f2;
+}
+
+
+
+/*
+ * Médio 10
+ */
+
+.tabela.medio-10:deep(.celula) {
+	border-color: #fff;
+}
+
+.tabela.medio-10:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+	color: #fff;
+	background-color: #ed7d31;
+}
+
+.tabela.medio-10:deep(.celula.linha-impar) {
+	background-color: #f8cbad;
+}
+
+.tabela.medio-10:deep(.celula.linha-par) {
+	background-color: #fce4d6;
+}
+
+
+
+/*
+ * Médio 11
+ */
+
+.tabela.medio-11:deep(.celula) {
+	border-color: #fff;
+}
+
+.tabela.medio-11:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+	color: #fff;
+	background-color: #a5a5a5;
+}
+
+.tabela.medio-11:deep(.celula.linha-impar) {
+	background-color: #dbdbdb;
+}
+
+.tabela.medio-11:deep(.celula.linha-par) {
+	background-color: #ededed;
+}
+
+.tabela.medio-11:deep(.selecao) {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*
+ * Médio 12
+ */
+
+.tabela.medio-12:deep(.celula) {
+	border-color: #fff;
+}
+
+.tabela.medio-12:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+	color: #fff;
+	background-color: #ffc000;
+}
+
+.tabela.medio-12:deep(.celula.linha-impar) {
+	background-color: #ffe699;
+}
+
+.tabela.medio-12:deep(.celula.linha-par) {
+	background-color: #fff2cc;
+}
+
+
+
+/*
+ * Médio 13
+ */
+
+.tabela.medio-13:deep(.celula) {
+	border-color: #fff;
+}
+
+.tabela.medio-13:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+	color: #fff;
+	background-color: #5b9bd5;
+}
+
+.tabela.medio-13:deep(.celula.linha-impar) {
+	background-color: #bdd7ee;
+}
+
+.tabela.medio-13:deep(.celula.linha-par) {
+	background-color: #ddebf7;
+}
+
+
+
+/*
+ * Médio 14
+ */
+
+.tabela.medio-14:deep(.celula) {
+	border-color: #fff;
+}
+
+.tabela.medio-14:deep(.celula.cabecalho) {
+	height: 29px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+	color: #fff;
+	background-color: #70ad47;
+}
+
+.tabela.medio-14:deep(.celula.linha-impar) {
+	background-color: #c6e0b4;
+}
+
+.tabela.medio-14:deep(.celula.linha-par) {
+	background-color: #e2efda;
+}
+
+
+
+/*
+ * Médio 15
+ */
+
+.tabela.medio-15:deep(.celula.cabecalho) {
+	height: 29px;
+	margin: 0;
+	border: none;
+	padding: 6px 5px 5px 6px;
+	color: #fff;
+	background-color: #000;
+}
+
+.tabela.medio-15:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-15:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-15:deep(.selecao) {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+
+/*
+ * Médio 16
+ */
+
+.tabela.medio-16:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.medio-16:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-16:deep(.celula.ultima-linha) {
+	border-bottom: 2px solid #000;
+	padding-bottom: 4px;
+}
+
+.tabela.medio-16:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #000;
+	padding: 6px 5px 4px 6px;
+	color: #fff;
+	background-color: #4472c4;
+}
+
+.tabela.medio-16:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-16:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-16:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.tabela.medio-16:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-16:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 2px;
+}
+
+.tabela.medio-16:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.medio-16:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.medio-16:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-16:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.medio-16:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.medio-16:deep(.celula input[type="text"]),
+.tabela.medio-16:deep(.celula input[type="number"]),
+.tabela.medio-16:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.medio-16:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.medio-16:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.medio-16:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.medio-16:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-16:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-16:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 4px;
+}
+
+
+
+/*
+ * Médio 17
+ */
+
+.tabela.medio-17:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.medio-17:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-17:deep(.celula.ultima-linha) {
+	border-bottom: 2px solid #000;
+	padding-bottom: 4px;
+}
+
+.tabela.medio-17:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #000;
+	padding: 6px 5px 4px 6px;
+	color: #fff;
+	background-color: #ed7d31;
+}
+
+.tabela.medio-17:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-17:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-17:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.tabela.medio-17:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-17:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 2px;
+}
+
+.tabela.medio-17:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.medio-17:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.medio-17:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-17:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.medio-17:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.medio-17:deep(.celula input[type="text"]),
+.tabela.medio-17:deep(.celula input[type="number"]),
+.tabela.medio-17:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.medio-17:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.medio-17:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.medio-17:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.medio-17:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-17:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-17:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 4px;
+}
+
+
+
+/*
+ * Médio 18
+ */
+
+.tabela.medio-18:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.medio-18:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-18:deep(.celula.ultima-linha) {
+	border-bottom: 2px solid #000;
+	padding-bottom: 4px;
+}
+
+.tabela.medio-18:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #000;
+	padding: 6px 5px 4px 6px;
+	color: #fff;
+	background-color: #a5a5a5;
+}
+
+.tabela.medio-18:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-18:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-18:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.tabela.medio-18:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-18:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 2px;
+}
+
+.tabela.medio-18:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.medio-18:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.medio-18:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-18:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.medio-18:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.medio-18:deep(.celula input[type="text"]),
+.tabela.medio-18:deep(.celula input[type="number"]),
+.tabela.medio-18:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.medio-18:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.medio-18:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.medio-18:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.medio-18:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-18:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-18:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 4px;
+}
+
+
+
+/*
+ * Médio 19
+ */
+
+.tabela.medio-19:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.medio-19:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-19:deep(.celula.ultima-linha) {
+	border-bottom: 2px solid #000;
+	padding-bottom: 4px;
+}
+
+.tabela.medio-19:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #000;
+	padding: 6px 5px 4px 6px;
+	color: #fff;
+	background-color: #ffc000;
+}
+
+.tabela.medio-19:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-19:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-19:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.tabela.medio-19:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-19:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 2px;
+}
+
+.tabela.medio-19:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.medio-19:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.medio-19:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-19:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.medio-19:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.medio-19:deep(.celula input[type="text"]),
+.tabela.medio-19:deep(.celula input[type="number"]),
+.tabela.medio-19:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.medio-19:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.medio-19:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.medio-19:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.medio-19:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-19:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-19:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 4px;
+}
+
+
+
+/*
+ * Médio 20
+ */
+
+.tabela.medio-20:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.medio-20:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-20:deep(.celula.ultima-linha) {
+	border-bottom: 2px solid #000;
+	padding-bottom: 4px;
+}
+
+.tabela.medio-20:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #000;
+	padding: 6px 5px 4px 6px;
+	color: #fff;
+	background-color: #5b9bd5;
+}
+
+.tabela.medio-20:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-20:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-20:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.tabela.medio-20:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-20:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 2px;
+}
+
+.tabela.medio-20:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.medio-20:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.medio-20:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-20:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.medio-20:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.medio-20:deep(.celula input[type="text"]),
+.tabela.medio-20:deep(.celula input[type="number"]),
+.tabela.medio-20:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.medio-20:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.medio-20:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.medio-20:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.medio-20:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-20:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-20:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 4px;
+}
+
+
+
+/*
+ * Médio 21
+ */
+
+.tabela.medio-21:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.medio-21:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-21:deep(.celula.ultima-linha) {
+	border-bottom: 2px solid #000;
+	padding-bottom: 4px;
+}
+
+.tabela.medio-21:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #000;
+	padding: 6px 5px 4px 6px;
+	color: #fff;
+	background-color: #70ad47;
+}
+
+.tabela.medio-21:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.medio-21:deep(.celula.linha-impar) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-21:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.tabela.medio-21:deep(.selecao.inicio-ultima-linha),
+.tabela.medio-21:deep(.selecao.fim-ultima-linha) {
+	margin-bottom: 2px;
+}
+
+.tabela.medio-21:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.medio-21:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.medio-21:deep(.area-transferencia.fim-ultima-linha) {
+	margin-bottom: 1px;
+}
+
+.tabela.medio-21:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.medio-21:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.medio-21:deep(.celula input[type="text"]),
+.tabela.medio-21:deep(.celula input[type="number"]),
+.tabela.medio-21:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.medio-21:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.medio-21:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.medio-21:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+.tabela.medio-21:deep(.celula.ultima-linha input[type="text"]),
+.tabela.medio-21:deep(.celula.ultima-linha input[type="number"]),
+.tabela.medio-21:deep(.celula.ultima-linha input[type="email"]) {
+	padding-bottom: 4px;
+}
+
+
+
+/*
+ * Médio 22
+ */
+
+.tabela.medio-22:deep(.celula.cabecalho) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-22:deep(.celula.linha-impar) {
+	background-color: #a6a6a6;
+}
+
+.tabela.medio-22:deep(.celula.linha-par) {
+	background-color: #d9d9d9;
+}
+
+.tabela.medio-22:deep(.selecao) {
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+
+/*
+ * Médio 23
+ */
+
+.tabela.medio-23:deep(.celula) {
+	border-color: #8ea9db;
+}
+
+.tabela.medio-23:deep(.celula.cabecalho) {
+	background-color: #d9e1f2;
+}
+
+.tabela.medio-23:deep(.celula.linha-impar) {
+	background-color: #b4c6e7;
+}
+
+.tabela.medio-23:deep(.celula.linha-par) {
+	background-color: #d9e1f2;
+}
+
+
+
+/*
+ * Médio 24
+ */
+
+.tabela.medio-24:deep(.celula) {
+	border-color: #f4b084;
+}
+
+.tabela.medio-24:deep(.celula.cabecalho) {
+	background-color: #fce4d6;
+}
+
+.tabela.medio-24:deep(.celula.linha-impar) {
+	background-color: #f8cbad;
+}
+
+.tabela.medio-24:deep(.celula.linha-par) {
+	background-color: #fce4d6;
+}
+
+
+
+/*
+ * Médio 25
+ */
+
+.tabela.medio-25:deep(.celula) {
+	border-color: #c9c9c9;
+}
+
+.tabela.medio-25:deep(.celula.cabecalho) {
+	background-color: #ededed;
+}
+
+.tabela.medio-25:deep(.celula.linha-impar) {
+	background-color: #dbdbdb;
+}
+
+.tabela.medio-25:deep(.celula.linha-par) {
+	background-color: #ededed;
+}
+
+
+
+/*
+ * Médio 26
+ */
+
+.tabela.medio-26:deep(.celula) {
+	border-color: #ffd966;
+}
+
+.tabela.medio-26:deep(.celula.cabecalho) {
+	background-color: #fff2cc;
+}
+
+.tabela.medio-26:deep(.celula.linha-impar) {
+	background-color: #ffe699;
+}
+
+.tabela.medio-26:deep(.celula.linha-par) {
+	background-color: #fff2cc;
+}
+
+
+
+/*
+ * Médio 27
+ */
+
+.tabela.medio-27:deep(.celula) {
+	border-color: #9bc2e6;
+}
+
+.tabela.medio-27:deep(.celula.cabecalho) {
+	background-color: #ddebf7;
+}
+
+.tabela.medio-27:deep(.celula.linha-impar) {
+	background-color: #bdd7ee;
+}
+
+.tabela.medio-27:deep(.celula.linha-par) {
+	background-color: #ddebf7;
+}
+
+
+
+/*
+ * Médio 28
+ */
+
+.tabela.medio-28:deep(.celula) {
+	border-color: #a9d08e;
+}
+
+.tabela.medio-28:deep(.celula.cabecalho) {
+	background-color: #e2efda;
+}
+
+.tabela.medio-28:deep(.celula.linha-impar) {
+	background-color: #c6e0b4;
+}
+
+.tabela.medio-28:deep(.celula.linha-par) {
+	background-color: #e2efda;
+}
+
+
+
+/*
+ * Escuro 1
+ */
+
+.tabela.escuro-1:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #fff;
+}
+
+.tabela.escuro-1:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-1:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 6px 5px 4px 6px;
+	background-color: #000;
+}
+
+.tabela.escuro-1:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-1:deep(.celula.linha-impar) {
+	background-color: #404040;
+}
+
+.tabela.escuro-1:deep(.celula.linha-par) {
+	background-color: #737373;
+}
+
+.tabela.escuro-1:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.tabela.escuro-1:deep(.area-transferencia) {
+	margin: 0;
+	border-color: #fff;
+}
+
+.tabela.escuro-1:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.escuro-1:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-1:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.escuro-1:deep(.celula input[type="text"]),
+.tabela.escuro-1:deep(.celula input[type="number"]),
+.tabela.escuro-1:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-1:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-1:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-1:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 2
+ */
+
+.tabela.escuro-2:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #fff;
+}
+
+.tabela.escuro-2:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-2:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 6px 5px 4px 6px;
+	background-color: #000;
+}
+
+.tabela.escuro-2:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-2:deep(.celula.linha-impar) {
+	background-color: #305496;
+}
+
+.tabela.escuro-2:deep(.celula.linha-par) {
+	background-color: #4472c4;
+}
+
+.tabela.escuro-2:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.tabela.escuro-2:deep(.area-transferencia) {
+	margin: 0;
+	border-color: #fff;
+}
+
+.tabela.escuro-2:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.escuro-2:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-2:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.escuro-2:deep(.celula input[type="text"]),
+.tabela.escuro-2:deep(.celula input[type="number"]),
+.tabela.escuro-2:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-2:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-2:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-2:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 3
+ */
+
+.tabela.escuro-3:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #fff;
+}
+
+.tabela.escuro-3:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-3:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 6px 5px 4px 6px;
+	background-color: #000;
+}
+
+.tabela.escuro-3:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-3:deep(.celula.linha-impar) {
+	background-color: #c65911;
+}
+
+.tabela.escuro-3:deep(.celula.linha-par) {
+	background-color: #ed7d31;
+}
+
+.tabela.escuro-3:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.tabela.escuro-3:deep(.area-transferencia) {
+	margin: 0;
+	border-color: #fff;
+}
+
+.tabela.escuro-3:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.escuro-3:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-3:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.escuro-3:deep(.celula input[type="text"]),
+.tabela.escuro-3:deep(.celula input[type="number"]),
+.tabela.escuro-3:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-3:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-3:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-3:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 4
+ */
+
+.tabela.escuro-4:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #fff;
+}
+
+.tabela.escuro-4:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-4:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 6px 5px 4px 6px;
+	background-color: #000;
+}
+
+.tabela.escuro-4:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-4:deep(.celula.linha-impar) {
+	background-color: #7b7b7b;
+}
+
+.tabela.escuro-4:deep(.celula.linha-par) {
+	background-color: #a5a5a5;
+}
+
+.tabela.escuro-4:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.tabela.escuro-4:deep(.area-transferencia) {
+	margin: 0;
+	border-color: #fff;
+}
+
+.tabela.escuro-4:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.escuro-4:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-4:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.escuro-4:deep(.celula input[type="text"]),
+.tabela.escuro-4:deep(.celula input[type="number"]),
+.tabela.escuro-4:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-4:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-4:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-4:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 5
+ */
+
+.tabela.escuro-5:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #fff;
+}
+
+.tabela.escuro-5:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-5:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 6px 5px 4px 6px;
+	background-color: #000;
+}
+
+.tabela.escuro-5:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-5:deep(.celula.linha-impar) {
+	background-color: #bf8f00;
+}
+
+.tabela.escuro-5:deep(.celula.linha-par) {
+	background-color: #ffc000;
+}
+
+.tabela.escuro-5:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.tabela.escuro-5:deep(.area-transferencia) {
+	margin: 0;
+	border-color: #fff;
+}
+
+.tabela.escuro-5:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.escuro-5:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-5:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.escuro-5:deep(.celula input[type="text"]),
+.tabela.escuro-5:deep(.celula input[type="number"]),
+.tabela.escuro-5:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-5:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-5:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-5:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 6
+ */
+
+.tabela.escuro-6:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #fff;
+}
+
+.tabela.escuro-6:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-6:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 6px 5px 4px 6px;
+	background-color: #000;
+}
+
+.tabela.escuro-6:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-6:deep(.celula.linha-impar) {
+	background-color: #2f75b5;
+}
+
+.tabela.escuro-6:deep(.celula.linha-par) {
+	background-color: #5b9bd5;
+}
+
+.tabela.escuro-6:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.tabela.escuro-6:deep(.area-transferencia) {
+	margin: 0;
+	border-color: #fff;
+}
+
+.tabela.escuro-6:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.escuro-6:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-6:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.escuro-6:deep(.celula input[type="text"]),
+.tabela.escuro-6:deep(.celula input[type="number"]),
+.tabela.escuro-6:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-6:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-6:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-6:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 7
+ */
+
+.tabela.escuro-7:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+	color: #fff;
+}
+
+.tabela.escuro-7:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-7:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 6px 5px 4px 6px;
+	background-color: #000;
+}
+
+.tabela.escuro-7:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-7:deep(.celula.linha-impar) {
+	background-color: #548235;
+}
+
+.tabela.escuro-7:deep(.celula.linha-par) {
+	background-color: #70ad47;
+}
+
+.tabela.escuro-7:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.tabela.escuro-7:deep(.area-transferencia) {
+	margin: 0;
+	border-color: #fff;
+}
+
+.tabela.escuro-7:deep(.area-transferencia.inicio-primeira-linha) {
+	margin-top: -1px;
+}
+
+.tabela.escuro-7:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-7:deep(.celula-atual.primeira-linha) {
+	margin-top: -2px;
+}
+
+.tabela.escuro-7:deep(.celula input[type="text"]),
+.tabela.escuro-7:deep(.celula input[type="number"]),
+.tabela.escuro-7:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-7:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-7:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-7:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 8
+ */
+
+.tabela.escuro-8:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.escuro-8:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-8:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	padding: 6px 5px 6px 6px;
+	color: #fff;
+	background-color: #000;
+}
+
+.tabela.escuro-8:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-8:deep(.celula.linha-impar) {
+	background-color: #a6a6a6;
+}
+
+.tabela.escuro-8:deep(.celula.linha-par) {
+	background-color: #d9d9d9;
+}
+
+.tabela.escuro-8:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.tabela.escuro-8:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.escuro-8:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-8:deep(.celula input[type="text"]),
+.tabela.escuro-8:deep(.celula input[type="number"]),
+.tabela.escuro-8:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-8:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-8:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-8:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 9
+ */
+
+.tabela.escuro-9:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.escuro-9:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-9:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	padding: 6px 5px 6px 6px;
+	color: #fff;
+	background-color: #ed7d31;
+}
+
+.tabela.escuro-9:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-9:deep(.celula.linha-impar) {
+	background-color: #b4c6e7;
+}
+
+.tabela.escuro-9:deep(.celula.linha-par) {
+	background-color: #d9e1f2;
+}
+
+.tabela.escuro-9:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tabela.escuro-9:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.escuro-9:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-9:deep(.celula input[type="text"]),
+.tabela.escuro-9:deep(.celula input[type="number"]),
+.tabela.escuro-9:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-9:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-9:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-9:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 10
+ */
+
+.tabela.escuro-10:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.escuro-10:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-10:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	padding: 6px 5px 6px 6px;
+	color: #fff;
+	background-color: #ffc000;
+}
+
+.tabela.escuro-10:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-10:deep(.celula.linha-impar) {
+	background-color: #dbdbdb;
+}
+
+.tabela.escuro-10:deep(.celula.linha-par) {
+	background-color: #ededed;
+}
+
+.tabela.escuro-10:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tabela.escuro-10:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.escuro-10:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-10:deep(.celula input[type="text"]),
+.tabela.escuro-10:deep(.celula input[type="number"]),
+.tabela.escuro-10:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-10:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-10:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-10:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
+
+
+
+/*
+ * Escuro 11
+ */
+
+.tabela.escuro-11:deep(.celula) {
+	height: 29px;
+	margin: 0;
+	padding: 5px 5px 6px 6px;
+	border: none;
+}
+
+.tabela.escuro-11:deep(.celula.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-11:deep(.celula.cabecalho) {
+	height: 30px;
+	margin: 0;
+	border: none;
+	padding: 6px 5px 6px 6px;
+	color: #fff;
+	background-color: #70ad47;
+}
+
+.tabela.escuro-11:deep(.celula.cabecalho.ultima-coluna) {
+	padding-right: 6px;
+}
+
+.tabela.escuro-11:deep(.celula.linha-impar) {
+	background-color: #bdd7ee;
+}
+
+.tabela.escuro-11:deep(.celula.linha-par) {
+	background-color: #ddebf7;
+}
+
+.tabela.escuro-11:deep(.selecao) {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tabela.escuro-11:deep(.area-transferencia) {
+	margin: 0;
+}
+
+.tabela.escuro-11:deep(.celula-atual) {
+	margin: -1px;
+}
+
+.tabela.escuro-11:deep(.celula input[type="text"]),
+.tabela.escuro-11:deep(.celula input[type="number"]),
+.tabela.escuro-11:deep(.celula input[type="email"]) {
+	padding: 5px 5px 6px 6px;
+}
+
+.tabela.escuro-11:deep(.celula.ultima-coluna input[type="text"]),
+.tabela.escuro-11:deep(.celula.ultima-coluna input[type="number"]),
+.tabela.escuro-11:deep(.celula.ultima-coluna input[type="email"]) {
+	padding-right: 6px;
+}
