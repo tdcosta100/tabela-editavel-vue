@@ -51,22 +51,22 @@ import Tabela, { type Coluna } from '@/components/Tabela.vue';
 import { reactive } from 'vue';
 
 let colunas: Coluna[] = [
-	{
-		Nome: "coluna1",
-		Descricao: "Coluna 1",
-		Tipo: "string"
-	}
+    {
+        Nome: "coluna1",
+        Descricao: "Coluna 1",
+        Tipo: "string"
+    }
 ];
 
 let linhas: Record<string, any>[] = reactive([
-	{
-		coluna1: "Olá, mundo!"
-	}
+    {
+        coluna1: "Olá, mundo!"
+    }
 ]);
 </script>
 
 <template>
-	<Tabela :colunas="colunas" :linhas="linhas" />
+    <Tabela :colunas="colunas" :linhas="linhas" />
 </template>
 ```
 
@@ -78,13 +78,13 @@ Vamos começar analisando o tipo `Coluna` que define as colunas que iremos passa
 
 ```typescript
 type Coluna = {
-	Nome: string;
-	Descricao?: string;
-	Tipo: "string" | "number" | "boolean";
-	AtributosCabecalho?: Record<string, any>;
-	AtributosCelula?: Record<string, any>;
-	Validacao?: (valor: any) => any | false;
-	Conversao?: (valor: any, converterPara?: string) => any;
+    Nome: string;
+    Descricao?: string;
+    Tipo: "string" | "number" | "boolean";
+    AtributosCabecalho?: Record<string, any>;
+    AtributosCelula?: Record<string, any>;
+    Validacao?: (valor: any) => any | false;
+    Conversao?: (valor: any, converterPara?: string) => any;
 }
 ```
 
@@ -92,33 +92,33 @@ type Coluna = {
 
 * **Nome**: nome da propriedade em cada objeto da coleção `linhas` que aparecerá nessa coluna
 * **Tipo**: tipo da coluna. Cada tipo possui seu comportamento específico:
-	* **string**: tipo padrão. Não faz nenhuma validação de dados, e no modo de edição utiliza um `<input type="text" />`.
-	* **number**: tipo número. A princípio os dados não são convertidos para números válidos, mas após qualquer alteração é utilizada a conversão de valor utilizando-se `Number()` (por exemplo, `Number("42")`). Caso essa conversão resulte em `NaN` (por exemplo, como resultado de `Number("abc")` ou `Number("")`), será atribuído o valor padrão `null`, que é o valor padrão para representar a ausência de valor numérico. No modo de edição, utiliza um `<input type="number" />`.
-	* **boolean**: tipo booleano. É representado por um `<input type="checkbox" />`, estando checado caso o valor seja equivalente a `true` e em branco caso o valor seja equivalente a `false`. A princípio os dados não são convertidos para booleano, mas assim que há alguma alteração, é convertido para o equivalente booleano através de `!!` (por exemplo, `!!"Olá, mundo!"` é convertido para `true`, e `!!0` é convertido para `false`).
+    * **string**: tipo padrão. Não faz nenhuma validação de dados, e no modo de edição utiliza um `<input type="text" />`.
+    * **number**: tipo número. A princípio os dados não são convertidos para números válidos, mas após qualquer alteração é utilizada a conversão de valor utilizando-se `Number()` (por exemplo, `Number("42")`). Caso essa conversão resulte em `NaN` (por exemplo, como resultado de `Number("abc")` ou `Number("")`), será atribuído o valor padrão `null`, que é o valor padrão para representar a ausência de valor numérico. No modo de edição, utiliza um `<input type="number" />`.
+    * **boolean**: tipo booleano. É representado por um `<input type="checkbox" />`, estando checado caso o valor seja equivalente a `true` e em branco caso o valor seja equivalente a `false`. A princípio os dados não são convertidos para booleano, mas assim que há alguma alteração, é convertido para o equivalente booleano através de `!!` (por exemplo, `!!"Olá, mundo!"` é convertido para `true`, e `!!0` é convertido para `false`).
 
 ### Campos opcionais
 
 * **Descricao**: valor a ser mostrado no cabeçalho da coluna. Caso seja omitido, a célula do cabeçalho não será renderizada. Caso ela deva ser renderizada sem nenhum conteúdo dentro, basta especificar uma string vazia (`""`).
 * **AtributosCabecalho** e **AtributosCelula**: objeto cujas propriedades se tornarão atributos da célula do cabeçalho e da célula, respectivamente. Por exemplo:
 
-	```typescript
-	let colunas: Coluna[] = [
-		{
-			Nome: "coluna1",
-			Descricao: "Coluna 1",
-			Tipo: "string",
-			AtributosCabecalho: {
-				class: [ "cabecalho", "coluna-1" ], /* o Vue também aceita string e objeto, consulte a documentação para saber como utilizar */
-				style: "text-align: center", /* o Vue também aceita array e objeto, consulte a documentação para saber como utilizar */
-				"aria-label": "Coluna 1"
-			},
-			AtributosCelula: {
-				class: { celula: true, realce: tipoTabela === "realce" },
-				style: { "text-align": "right", "background-color": "#c00" }
-			}
-		}
-	];
-	```
+    ```typescript
+    let colunas: Coluna[] = [
+        {
+            Nome: "coluna1",
+            Descricao: "Coluna 1",
+            Tipo: "string",
+            AtributosCabecalho: {
+                class: [ "cabecalho", "coluna-1" ], /* o Vue também aceita string e objeto, consulte a documentação para saber como utilizar */
+                style: "text-align: center", /* o Vue também aceita array e objeto, consulte a documentação para saber como utilizar */
+                "aria-label": "Coluna 1"
+            },
+            AtributosCelula: {
+                class: { celula: true, realce: tipoTabela === "realce" },
+                style: { "text-align": "right", "background-color": "#c00" }
+            }
+        }
+    ];
+    ```
 * **Validacao**: função de validação de dados. Será chamada sempre que o valor da célula estiver prestes a ser atualizado. Deverá retornar o valor recebido (poderá formatar esse valor caso necessário, ou `false` caso seja inválido. Se o valor retornado for `false`, não haverá atualização do valor da célula. Se ela estiver no modo de edição, a edição será cancelada.
 
 * **Conversao**: função de conversão de dados. Será chamada sempre que for necessária conversão de dados (por exemplo, de `number` para `string`). Caso o parâmetro `converterPara` seja fornecido, deverá efetuar a conversão do parâmetro `valor` para o tipo especificado. Caso não seja fornecido, o parâmetro `valor` deverá ser convertido para tipo da coluna. É possível também criar associações de/para personalizada de dados. Por exemplo, de `number` para `string` sendo 1 => "Um", 2 => "Dois", etc, e vice-versa.
@@ -213,30 +213,30 @@ edicao-celula-boolean | Mostrado no modo de edição de célula do tipo `boolean
 A seguir, o funcionamento de cada slot:
 
 * **cabecalho**: você pode definir sua própria lógica de renderização de células do cabeçalho. Para auxiliar nesse processo, é passado ao slot o seguinte objeto:
-	```typescript
-	{ colunas: Coluna[] }
-	```
-	Dessa forma, é possível renderizar as colunas utilizando-se um `v-for`.
+    ```typescript
+    { colunas: Coluna[] }
+    ```
+    Dessa forma, é possível renderizar as colunas utilizando-se um `v-for`.
 
 * **edicao-celula-string, edicao-celula-number e edicao-celula-boolean**: esses três slots funcionam da mesma maneira: são exibidos somente quando o modo de edição está ativado, somente na célula selecionada. Eles recebem o seguinte objeto:
-	```typescript
-	{
-		linha: number,
-		coluna: number,
-		nomeColuna: string,
-		dados: Record<string, any>,
-		finalizarEdicaoCelula: () => void,
-		atualizarValorCelula: (valor: any) => void
-	}
-	```
+    ```typescript
+    {
+        linha: number,
+        coluna: number,
+        nomeColuna: string,
+        dados: Record<string, any>,
+        finalizarEdicaoCelula: () => void,
+        atualizarValorCelula: (valor: any) => void
+    }
+    ```
 
-	A seguir, a descrição de cada propriedade:
-	* **linha**: número da linha de dados (começando com 0)
-	* **coluna**: número da coluna de dados (começando com 0)
-	* **nomeColuna**: nome da propriedade do objeto `dados` que contém o valor da célula
-	* **dados**: objeto que contém os dados da linha da célula
-	* **finalizarEdicaoCelula**: método que deve ser chamado para sair do modo de edição. Por exemplo, em um `<input type="text" />` esse método seria chamado no evento `blur`.
-	* **atualizarValorCelula**: método que deve ser chamado para alterar o valor da célula atual. Por exemplo, em um `<input type="text" />` esse método seria chamado no evento `change`.
+    A seguir, a descrição de cada propriedade:
+    * **linha**: número da linha de dados (começando com 0)
+    * **coluna**: número da coluna de dados (começando com 0)
+    * **nomeColuna**: nome da propriedade do objeto `dados` que contém o valor da célula
+    * **dados**: objeto que contém os dados da linha da célula
+    * **finalizarEdicaoCelula**: método que deve ser chamado para sair do modo de edição. Por exemplo, em um `<input type="text" />` esse método seria chamado no evento `blur`.
+    * **atualizarValorCelula**: método que deve ser chamado para alterar o valor da célula atual. Por exemplo, em um `<input type="text" />` esse método seria chamado no evento `change`.
 
 ## Classes
 
