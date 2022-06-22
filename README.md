@@ -24,8 +24,8 @@ Você pode também navegar pelo [código-fonte do componente](src/components/Tab
 * <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd>: seleciona da célula atual até a célula da última linha e última coluna
 * <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>+</kbd>: insere uma nova linha
 * <kbd>Ctrl</kbd> + <kbd>A</kbd>: seleciona todas as células da tabela, exceto cabeçalho
-* <kbd>Ctrl</kbd> + <kbd>C</kbd>: copia as células selecionadas
 * <kbd>Ctrl</kbd> + <kbd>X</kbd>: recorta as células selecionadas
+* <kbd>Ctrl</kbd> + <kbd>C</kbd>: copia as células selecionadas
 * <kbd>Ctrl</kbd> + <kbd>V</kbd>: cola da área de transferência, ou da área marcada na tabela
 * <kbd>F2</kbd>: ativa a edição da célula sem apagar o conteúdo existente
 * Comece a digitar: ativa a edição da célula limpando o conteúdo existente
@@ -43,7 +43,7 @@ Você pode também navegar pelo [código-fonte do componente](src/components/Tab
 
 ## Como utilizar
 
-Para funcionar minimamente, o componente exige que duas propriedades estejam especificadas: `colunas` e `linhas`. Os exemplos aqui demonstrados utilizarão TypeScript.
+Para funcionar minimamente, o componente exige que duas propriedades estejam especificadas: `colunas` e `linhas`. Os exemplos aqui demonstrados utilizarão TypeScript e a [Composition API](https://vuejs.org/api/composition-api-setup.html).
 
 ```html
 <script setup lang="ts">
@@ -108,8 +108,8 @@ type Coluna = {
             Descricao: "Coluna 1",
             Tipo: "string",
             AtributosCabecalho: {
-                class: [ "cabecalho", "coluna-1" ], /* o Vue também aceita string e objeto, consulte a documentação para saber como utilizar */
-                style: "text-align: center", /* o Vue também aceita array e objeto, consulte a documentação para saber como utilizar */
+                class: [ "cabecalho", "coluna-1" ], // o Vue também aceita string e objeto, consulte a documentação para saber como utilizar
+                style: "text-align: center", // o Vue também aceita array e objeto, consulte a documentação para saber como utilizar
                 "aria-label": "Coluna 1"
             },
             AtributosCelula: {
@@ -138,7 +138,7 @@ Para acessar os dados de uma `ReferenciaCelula`, existem duas propriedades: `Lin
 ```typescript
 let celulaAtual = new ReferenciaCelula(3, 2);
 
-console.log(`Linha: ${celulaAtual.Linha}, Coluna: ${celulaAtual.Coluna}`); /* Linha: 3, Coluna: 2 */
+console.log(`Linha: ${celulaAtual.Linha}, Coluna: ${celulaAtual.Coluna}`); // Linha: 3, Coluna: 2
 
 celulaAtual.Linha = 8;
 celulaAtual.Coluna = 1;
@@ -151,26 +151,26 @@ Ela também possui alguns métodos úteis:
 let celula1 = new ReferenciaCelula(0, 0);
 let celula2 = new ReferenciaCelula(2, 2);
 
-/* O método set atribui linha e coluna de acordo com o parâmetro passado */
-celula1.set(celula2); /* celula1 agora tem a mesma linha e coluna que celula2 */
+// O método set atribui linha e coluna de acordo com o parâmetro passado
+celula1.set(celula2); // celula1 agora tem a mesma linha e coluna que celula2
 
-celula1.set(2, 2); /* o método set também aceita dois parâmetros de linha e coluna, respectivamente */
+celula1.set(2, 2); // o método set também aceita dois parâmetros de linha e coluna, respectivamente
 
-/* O método equals verifica se ambas as referências apontam para a mesma célula */
-celula1.equals(celula2); /* retorna true */
+// O método equals verifica se ambas as referências apontam para a mesma célula
+celula1.equals(celula2); // retorna true
 celula1.set(0, 0);
-celula1.equals(celula2); /* retorna false */
-ReferenciaCelula.equals(celula1, celula2); /* versão estática do método, aceita dois parâmetros */
+celula1.equals(celula2); // retorna false
+ReferenciaCelula.equals(celula1, celula2); // versão estática do método, aceita dois parâmetros
 
 let celula3 = new ReferenciaCelula(3, 0);
 
-/* Os métodos min e max aceitam 1 ou mais parâmetros */
-let celulaMinima = ReferenciaCelula.min(celula1, celula2, celula3); /* retorna uma ReferenciaCelula com Linha 2 e Coluna 0 */
-let celulaMaxima = ReferenciaCelula.max(celula1, celula2, celula3); /* retorna uma ReferenciaCelula com Linha 3 e Coluna 2 */
+// Os métodos min e max aceitam 1 ou mais parâmetros
+let celulaMinima = ReferenciaCelula.min(celula1, celula2, celula3); // retorna uma ReferenciaCelula com Linha 2 e Coluna 0
+let celulaMaxima = ReferenciaCelula.max(celula1, celula2, celula3); // retorna uma ReferenciaCelula com Linha 3 e Coluna 2
 
-/* O método inRange verifica se uma ReferenciaCelula está contida dentro do retângulo delimitado pelos parâmetros passados */
-console.log(celula2.inRange(celulaMinima, celulaMaxima)); /* true */
-console.log(celula2.inRange(celula1, celula3)); /* true, pois não importa em quais cantos do retângulo estão as células */
+// O método inRange verifica se uma ReferenciaCelula está contida dentro do retângulo delimitado pelos parâmetros passados
+console.log(celula2.inRange(celulaMinima, celulaMaxima)); // true
+console.log(celula2.inRange(celula1, celula3)); // true, pois não importa em quais cantos do retângulo estão as células
 ```
 
 ## Atributos opcionais
@@ -237,6 +237,46 @@ A seguir, o funcionamento de cada slot:
     * **dados**: objeto que contém os dados da linha da célula
     * **finalizarEdicaoCelula**: método que deve ser chamado para sair do modo de edição. Por exemplo, em um `<input type="text" />` esse método seria chamado no evento `blur`.
     * **atualizarValorCelula**: método que deve ser chamado para alterar o valor da célula atual. Por exemplo, em um `<input type="text" />` esse método seria chamado no evento `change`.
+
+## API da instância
+
+A instância do componente tem uma API, definida através da seguinte interface:
+
+```typescript
+interface APITabela {
+    recortarCelulas: () => void;
+    copiarCelulas: () => void;
+    colarCelulas: () => void;
+    cancelarAreaTransferencia: () => void;
+}
+```
+
+Método | Descrição
+-------|----------
+`recortarCelulas` | Recorta as células selecionadas.
+`copiarCelulas` | Copia as células selecionadas.
+`colar` | Cola as células selecionadas ou o conteúdo da área de transferência.
+`cancelarAreaTransferencia` | Limpa a seleção de células recortadas/copiadas, e a área de transferência caso existam células recortadas/copiadas.
+
+E como fazer para acessar essa interface? Considere o exemplo abaixo (usando a Composition API):
+
+```html
+<script setup lang="ts">
+import Tabela, { type APITabela } from '@/components/Tabela.vue';
+
+const tabela: APITabela;
+</script>
+
+<template>
+    <button @click="tabela.recortarCelulas()">Recortar Células</button>
+    <button @click="tabela.copiarCelulas()">Copiar Células</button>
+    <button @click="tabela.colar()">Colar</button>
+    <button @click="tabela.cancelarAreaTransferencia()">Limpar seleção</button>
+    <Tabela :ref="element => tabela = (element as unknown) as APITabela" />
+</template>
+```
+
+É relativamente simples, não tem muito segredo.
 
 ## Classes
 

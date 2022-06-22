@@ -63,6 +63,13 @@ export type Coluna = {
 	Validacao?: (valor: any) => any | false;
 	Conversao?: (valor: any, converterPara?: TipoDadosColuna) => any;
 }
+
+export interface APITabela {
+	recortarCelulas: () => void;
+	copiarCelulas: () => void;
+	colar: () => void;
+	cancelarAreaTransferencia: () => void;
+};
 </script>
 
 <script setup lang="ts">
@@ -134,7 +141,9 @@ const estado = reactive({
 	areaTransferenciaFim: new ReferenciaCelula(-1, -1),
 	areaTransferenciaRecortar: false,
 	selecaoMultiplaMouse: false,
-	selecaoMultiplaTeclado: false
+	selecaoMultiplaTeclado: false,
+	eventoToque: false,
+	multiploToque: false
 });
 
 const computadas = reactive({
@@ -251,6 +260,37 @@ const metodos = {
 	elementoCelula: (referencia: ReferenciaCelula): HTMLElement => {
 		return estado.celulas[`${referencia.Linha}_${referencia.Coluna}`];
 	},
+	elementoCelulaDeCoordenadas: (x: number, y: number): HTMLElement | null => {
+		const elementoCelula = document.elementsFromPoint(x, y).filter(elemento => elemento.classList.contains("celula") && !elemento.classList.contains("cabecalho"));
+
+		if (elementoCelula.length) {
+			return elementoCelula[0] as HTMLElement;
+		}
+
+		return null;
+	},
+	referenciaCeluladeElementoCelula: (elemento: HTMLElement | null): ReferenciaCelula | null => {
+		let classeLinha = null as string | null;
+		let classeColuna = null as string | null;
+
+		if (elemento === undefined || elemento === null) {
+			return null;
+		}
+
+		elemento.classList.forEach(classe => {
+			if (/^linha-\d+$/.test(classe)) {
+				classeLinha = classe;
+			} else if (/^coluna-\d+$/.test(classe)) {
+				classeColuna = classe;
+			}
+		});
+
+		if (classeLinha !== null && classeColuna !== null) {
+			return new ReferenciaCelula(parseInt(classeLinha.replace("linha-", "")) - 1, parseInt(classeColuna.replace("coluna-", "")) - 1);
+		}
+
+		return null;
+	},
 	finalizarEdicaoCelula: () => {
 		estado.editando = false;
 
@@ -355,7 +395,7 @@ const metodos = {
 			return;
 		}
 
-		if (!(dados && dados.length && dados[0].length) && !(origemInicial.inRange(computadas.celulaMinima, computadas.celulaMaxima) && origemFinal.inRange(computadas.celulaMinima, computadas.celulaMaxima))) {
+		if (!(dados && dados.length && dados[0].length && dados[0][0].length) && !(origemInicial.inRange(computadas.celulaMinima, computadas.celulaMaxima) && origemFinal.inRange(computadas.celulaMinima, computadas.celulaMaxima))) {
 			return;
 		}
 
@@ -503,6 +543,10 @@ const metodos = {
 	mouseCelula: (linha: number, coluna: number, event: MouseEvent) => {
 		const referencia = new ReferenciaCelula(linha, coluna);
 
+		if (estado.eventoToque) {
+			return;
+		}
+
 		if (event.type === "mousedown") {
 			if (!computadas.selecaoMultipla) {
 				estado.inicioSelecao.set(referencia);
@@ -528,6 +572,39 @@ const metodos = {
 						(inputElement[0] as HTMLInputElement).focus();
 					}
 				});
+		}
+	},
+	toqueTabela: (event: TouchEvent) => {
+		if (event.touches.length === 1 && !estado.multiploToque) {
+			const referenciaCelula = metodos.referenciaCeluladeElementoCelula(metodos.elementoCelulaDeCoordenadas(event.touches[0].clientX, event.touches[0].clientY));
+
+			if (referenciaCelula === null) {
+				return;
+			}
+
+			if (event.type === "touchstart") {
+				estado.eventoToque = true;
+			} else if (event.type === "touchmove") {
+				if (!computadas.selecaoMultipla) {
+					estado.inicioSelecao.set(referenciaCelula);
+				}
+
+				estado.selecaoMultiplaMouse = true;
+
+				if (!referenciaCelula.equals(estado.celulaAtual)) {
+					estado.celulaAtual.set(referenciaCelula);
+				}
+
+				estado.celulaAtual.set(referenciaCelula);
+
+				event.preventDefault();
+			}
+		} else if (event.touches.length > 1 && !estado.multiploToque) {
+			estado.multiploToque = true;
+		} else if (event.type === "touchend" && event.touches.length === 0) {
+			estado.eventoToque = false;
+			estado.multiploToque = false;
+			estado.selecaoMultiplaMouse = false;
 		}
 	},
 	digitacaoTabela: (event: KeyboardEvent) => {
@@ -900,12 +977,60 @@ onBeforeUpdate(() => {
 	estado.celulas = {};
 });
 
+defineExpose<APITabela>({
+	recortarCelulas: () => {
+		estado.areaTransferenciaInicio.set(ReferenciaCelula.min(estado.celulaAtual, estado.inicioSelecao));
+		estado.areaTransferenciaFim.set(ReferenciaCelula.max(estado.celulaAtual, estado.inicioSelecao));
+		estado.areaTransferenciaRecortar = true;
+	},
+	copiarCelulas: () => {
+		estado.areaTransferenciaInicio.set(ReferenciaCelula.min(estado.celulaAtual, estado.inicioSelecao));
+		estado.areaTransferenciaFim.set(ReferenciaCelula.max(estado.celulaAtual, estado.inicioSelecao));
+	},
+	colar: async () => {
+		if (estado.areaTransferenciaInicio.inRange(computadas.celulaMinima, computadas.celulaMaxima) && estado.areaTransferenciaFim.inRange(computadas.celulaMinima, computadas.celulaMaxima)) {
+			if (metodos.colarCelulas(estado.celulaAtual, null, estado.areaTransferenciaInicio, estado.areaTransferenciaFim, estado.areaTransferenciaRecortar) === false) {
+				return;
+			}
+
+			estado.areaTransferenciaInicio.set(-1, -1);
+			estado.areaTransferenciaFim.set(-1, -1);
+			estado.areaTransferenciaRecortar = false;
+		} else {
+			const dados = ((await navigator.clipboard.readText()) ?? "").replace(/\r|\n$/g, "").split("\n").map(linha => linha.split("\t"));
+
+			if (metodos.colarCelulas(estado.celulaAtual, dados) === false) {
+				return;
+			}
+			
+		}
+
+		navigator.clipboard.writeText("");
+	},
+	cancelarAreaTransferencia: () => {
+		estado.areaTransferenciaInicio.set(-1, -1);
+		estado.areaTransferenciaFim.set(-1, -1);
+		estado.areaTransferenciaRecortar = false;
+		navigator.clipboard.writeText("");
+	}
+});
+
 metodos.gerarIdentificadoresLinhas();
 </script>
 
 
 <template>
-	<div :class="{ tabela: true, editando: estado.editando }" :ref="(element) => estado.tabela = element as HTMLElement" @keydown="metodos.digitacaoTabela" @keyup="metodos.digitacaoTabela" tabindex="0">
+	<div
+		tabindex="0"
+		:class="{ tabela: true, editando: estado.editando }"
+		:ref="(element) => estado.tabela = element as HTMLElement"
+		@keydown="metodos.digitacaoTabela"
+		@keyup="metodos.digitacaoTabela"
+		@touchstart="(event) => metodos.toqueTabela(event)"
+		@touchend="(event) => metodos.toqueTabela(event)"
+		@touchmove="(event) => metodos.toqueTabela(event)"
+		@touchcancel="(event) => metodos.toqueTabela(event)"
+		>
 		<slot name="cabecalho" v-bind="{ colunas: props.colunas }">
 			<template v-for="(coluna, numeroColuna) in props.colunas" :key="`cabecalho_${numeroColuna}`">
 					<div v-if="coluna.Descricao" :class="{ celula: true, cabecalho: true, [`coluna-${numeroColuna + 1}`]: true, 'primeira-coluna': numeroColuna === 0, 'ultima-coluna': numeroColuna === computadas.colunaMaxima }" :style="{ 'grid-row': 1, 'grid-column': numeroColuna + 1 }" v-bind="metodos.atributosCabecalho(coluna, numeroColuna)">{{ coluna.Descricao }}</div>

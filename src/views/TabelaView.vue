@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Tabela, { ReferenciaCelula, type Coluna } from '@/components/Tabela.vue';
+import Tabela, { ReferenciaCelula, type APITabela, type Coluna } from '@/components/Tabela.vue';
 import { reactive, ref, watch } from 'vue';
 import dados from '@/assets/dados.json';
 
@@ -147,6 +147,8 @@ const celulaDiferente = (linha: Record<string, any>, numeroLinha: number, numero
 		return { class: "celula-diferente", style: "background-color: #c00; text-align: center;" };
 	}
 }
+
+let tabela: APITabela;
 </script>
 
 <template>
@@ -157,7 +159,15 @@ const celulaDiferente = (linha: Record<string, any>, numeroLinha: number, numero
 			<li>Células da coluna <strong>Telefone</strong> possuem validação de telefone, através de função de validação na definição da coluna</li>
 			<li>Linhas com a coluna <strong>Identificação</strong> 4 possuem formatação diferente (através da propriedade <strong>atributos-linha</strong>)</li>
 			<li>Células da coluna <strong>E-mail</strong> de linhas com a coluna <strong>Identificação</strong> 4 possuem formatação diferente</li>
+			<li>Ao colar células da coluna <strong>Identificação</strong> na coluna <strong>Nome</strong>, há conversão dos valores <em>1</em>, <em>2</em> e <em>3</em> (experimente para ver o que acontece)</li>
+			<li>Ao colar células da coluna <strong>Ativo</strong> na coluna <strong>Nome</strong>, há conversão dos valores <em>true</em> e <em>false</em> (experimente para ver o que acontece)</li>
 			<li>É possível selecionar um estilo de tabela através do seletor abaixo</li>
+			<li>Caso esteja acessando de um celular:
+				<ul>
+					<li>Toque e arraste com um dedo para selecionar células</li>
+					<li>Arraste com dois dedos para rolar a página</li>
+				</ul>
+			</li>
 		</ul>
 		<p style="margin: 10px 0">Acesse a documentação de uso <a href="https://github.com/tdcosta100/tabela-editavel-vue#intera%C3%A7%C3%B5es-poss%C3%ADveis-e-atalhos" target="_blank">aqui</a>.</p>
 		<p>Acesse o código-fonte desta página <a href="https://github.com/tdcosta100/tabela-editavel-vue/blob/master/src/views/TabelaView.vue" target="_blank">aqui</a>.</p>
@@ -224,7 +234,13 @@ const celulaDiferente = (linha: Record<string, any>, numeroLinha: number, numero
 			<option value="escuro-10">Escuro 10</option>
 			<option value="escuro-11">Escuro 11</option>
 		</select>
-		<Tabela :class="estado.estilo" :colunas="colunas" :linhas="linhas" :celula-atual="celulaAtual" :inicio-selecao="inicioSelecao" :somente-leitura="false" :atributos-linha="linhaDiferente" :atributos-celula="celulaDiferente">
+		<div style="display: flex; gap: 10px; margin-bottom: 10px;">
+			<button @click="tabela.recortarCelulas()">Recortar células selecionadas</button>
+			<button @click="tabela.copiarCelulas()">Copiar células selecionadas</button>
+			<button @click="tabela.colar()">Colar</button>
+			<button @click="tabela.cancelarAreaTransferencia()">Cancelar recortar/copiar</button>
+		</div>
+		<Tabela :ref="element => tabela = (element as unknown) as APITabela" :class="estado.estilo" :colunas="colunas" :linhas="linhas" :celula-atual="celulaAtual" :inicio-selecao="inicioSelecao" :somente-leitura="false" :atributos-linha="linhaDiferente" :atributos-celula="celulaDiferente">
 			<template #edicao-celula-string="{ linha, coluna, nomeColuna, dados, finalizarEdicaoCelula, atualizarValorCelula }">
 				<div v-if="nomeColuna === 'email'" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
 					<input type="email" :value="dados[nomeColuna]" @change="(event) => (event.target as HTMLInputElement).validity.valid && atualizarValorCelula((event.target as HTMLInputElement).value)" @blur="finalizarEdicaoCelula()" @input="(event) => $parent?.$emit('update:celula', event, (event.target as HTMLInputElement).value, linha, coluna)" />
@@ -246,6 +262,10 @@ ul {
 
 strong {
 	font-weight: bold;
+}
+
+.container {
+	display: inline-block;
 }
 
 .tabela {
