@@ -166,6 +166,8 @@ let tabela: APITabela;
 				<ul>
 					<li>Toque e arraste com um dedo para selecionar células</li>
 					<li>Arraste com dois dedos para rolar a página</li>
+					<li>Dê dois toques em uma célula para editar seu conteúdo</li>
+					<li>Toque em qualquer outra célula para sair do modo de edição</li>
 				</ul>
 			</li>
 		</ul>
