@@ -170,7 +170,7 @@ let tabela: APITabela;
 			</li>
 		</ul>
 		<p style="margin: 10px 0">Acesse a documentação de uso <a href="https://github.com/tdcosta100/tabela-editavel-vue#intera%C3%A7%C3%B5es-poss%C3%ADveis-e-atalhos" target="_blank">aqui</a>.</p>
-		<p>Acesse o código-fonte desta página <a href="https://github.com/tdcosta100/tabela-editavel-vue/blob/master/src/views/TabelaView.vue" target="_blank">aqui</a>.</p>
+		<p>Acesse o código-fonte desta página <a href="https://github.com/tdcosta100/tabela-editavel-vue/blob/main/src/views/TabelaView.vue" target="_blank">aqui</a>.</p>
 		<select style="margin: 10px 0" @change="event => estado.estilo = (event.target as HTMLSelectElement).value">
 			<option value="">Sem tema</option>
 			<option value="claro-1">Claro 1</option>
