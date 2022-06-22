@@ -69,6 +69,9 @@ export interface APITabela {
 	copiarCelulas: () => void;
 	colar: () => void;
 	cancelarAreaTransferencia: () => void;
+	inserirLinha: () => void;
+	limparCelulasSelecionadas: () => void;
+	excluirLinhasSelecionadas: () => void;
 };
 </script>
 
@@ -1012,6 +1015,23 @@ defineExpose<APITabela>({
 		estado.areaTransferenciaFim.set(-1, -1);
 		estado.areaTransferenciaRecortar = false;
 		navigator.clipboard.writeText("");
+	},
+	inserirLinha: () => {
+		if (props.somenteLeitura) {
+			return;
+		}
+
+		computadas.linhas.splice(estado.celulaAtual.Linha, 0, metodos.linhaVazia());
+	},
+	limparCelulasSelecionadas: () => {
+		const event = new KeyboardEvent("keydown", { key: "Delete" });
+
+		estado.tabela?.dispatchEvent(event);
+	},
+	excluirLinhasSelecionadas: () => {
+		const event = new KeyboardEvent("keydown", { key: "Delete", shiftKey: true });
+
+		estado.tabela?.dispatchEvent(event);
 	}
 });
 

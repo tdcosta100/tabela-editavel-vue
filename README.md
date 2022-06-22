@@ -246,8 +246,11 @@ A instância do componente tem uma API, definida através da seguinte interface:
 interface APITabela {
     recortarCelulas: () => void;
     copiarCelulas: () => void;
-    colarCelulas: () => void;
+    colar: () => void;
     cancelarAreaTransferencia: () => void;
+    inserirLinha: () => void;
+    limparCelulasSelecionadas: () => void;
+    excluirLinhasSelecionadas: () => void;
 }
 ```
 
@@ -257,6 +260,9 @@ Método | Descrição
 `copiarCelulas` | Copia as células selecionadas.
 `colar` | Cola as células selecionadas ou o conteúdo da área de transferência.
 `cancelarAreaTransferencia` | Limpa a seleção de células recortadas/copiadas, e a área de transferência caso existam células recortadas/copiadas.
+`inserirLinha` | Insere uma linha em branco na linha da célula atual e move a linha atual e todas as linhas seguintes para baixo.
+`limparCelulasSelecionadas` | Limpa o conteúdo das células selecionadas.
+`excluirLinhasSelecionadas` | Exclui as linhas selecionadas.
 
 E como fazer para acessar essa interface? Considere o exemplo abaixo (usando a Composition API):
 
@@ -264,7 +270,21 @@ E como fazer para acessar essa interface? Considere o exemplo abaixo (usando a C
 <script setup lang="ts">
 import Tabela, { type APITabela } from '@/components/Tabela.vue';
 
-const tabela: APITabela;
+let colunas: Coluna[] = [
+    {
+        Nome: "coluna1",
+        Descricao: "Coluna 1",
+        Tipo: "string"
+    }
+];
+
+let linhas: Record<string, any>[] = reactive([
+    {
+        coluna1: "Olá, mundo!"
+    }
+]);
+
+let tabela: APITabela;
 </script>
 
 <template>
@@ -272,7 +292,10 @@ const tabela: APITabela;
     <button @click="tabela.copiarCelulas()">Copiar Células</button>
     <button @click="tabela.colar()">Colar</button>
     <button @click="tabela.cancelarAreaTransferencia()">Limpar seleção</button>
-    <Tabela :ref="element => tabela = (element as unknown) as APITabela" />
+    <button @click="tabela.inserirLinha()">Inserir linha</button>
+    <button @click="tabela.limparCelulasSelecionadas()">Limpar conteúdo selecionado</button>
+    <button @click="tabela.excluirLinhasSelecionadas()">Excluir linhas selecionadas</button>
+    <Tabela :ref="element => tabela = (element as unknown) as APITabela"  />
 </template>
 ```
 

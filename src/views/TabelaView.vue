@@ -239,6 +239,9 @@ let tabela: APITabela;
 			<button @click="tabela.copiarCelulas()">Copiar células selecionadas</button>
 			<button @click="tabela.colar()">Colar</button>
 			<button @click="tabela.cancelarAreaTransferencia()">Cancelar recortar/copiar</button>
+			<button @click="tabela.inserirLinha()">Inserir linha</button>
+			<button @click="tabela.limparCelulasSelecionadas()">Limpar células selecionadas</button>
+			<button @click="tabela.excluirLinhasSelecionadas()">Excluir linhas selecionadas</button>
 		</div>
 		<Tabela :ref="element => tabela = (element as unknown) as APITabela" :class="estado.estilo" :colunas="colunas" :linhas="linhas" :celula-atual="celulaAtual" :inicio-selecao="inicioSelecao" :somente-leitura="false" :atributos-linha="linhaDiferente" :atributos-celula="celulaDiferente">
 			<template #edicao-celula-string="{ linha, coluna, nomeColuna, dados, finalizarEdicaoCelula, atualizarValorCelula }">
